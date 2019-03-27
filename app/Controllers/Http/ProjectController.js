@@ -18,6 +18,7 @@ class ProjectController {
    * @param {View} ctx.view
    */
   async index ({ request }) {
+    console.log(request)
     return request.team.projects().fetch()
   }
 
